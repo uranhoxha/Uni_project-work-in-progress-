@@ -1,0 +1,16 @@
+C:\Users\Admin\source\repos\Uni_Project\bin\Debug\net6.0-windows\Uni_Project.exe
+C:\Users\Admin\source\repos\Uni_Project\bin\Debug\net6.0-windows\Uni_Project.deps.json
+C:\Users\Admin\source\repos\Uni_Project\bin\Debug\net6.0-windows\Uni_Project.runtimeconfig.json
+C:\Users\Admin\source\repos\Uni_Project\bin\Debug\net6.0-windows\Uni_Project.dll
+C:\Users\Admin\source\repos\Uni_Project\bin\Debug\net6.0-windows\Uni_Project.pdb
+C:\Users\Admin\source\repos\Uni_Project\obj\Debug\net6.0-windows\Uni_Project.Form1.resources
+C:\Users\Admin\source\repos\Uni_Project\obj\Debug\net6.0-windows\Uni_Project.csproj.GenerateResource.cache
+C:\Users\Admin\source\repos\Uni_Project\obj\Debug\net6.0-windows\Uni_Project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\source\repos\Uni_Project\obj\Debug\net6.0-windows\Uni_Project.AssemblyInfoInputs.cache
+C:\Users\Admin\source\repos\Uni_Project\obj\Debug\net6.0-windows\Uni_Project.AssemblyInfo.cs
+C:\Users\Admin\source\repos\Uni_Project\obj\Debug\net6.0-windows\Uni_Project.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\Uni_Project\obj\Debug\net6.0-windows\Uni_Project.dll
+C:\Users\Admin\source\repos\Uni_Project\obj\Debug\net6.0-windows\refint\Uni_Project.dll
+C:\Users\Admin\source\repos\Uni_Project\obj\Debug\net6.0-windows\Uni_Project.pdb
+C:\Users\Admin\source\repos\Uni_Project\obj\Debug\net6.0-windows\Uni_Project.genruntimeconfig.cache
+C:\Users\Admin\source\repos\Uni_Project\obj\Debug\net6.0-windows\ref\Uni_Project.dll
