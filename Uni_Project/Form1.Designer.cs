@@ -53,6 +53,10 @@
             Next_Turn = new Button();
             label1 = new Label();
             label2 = new Label();
+            firstPl_score = new Label();
+            secondPl_score = new Label();
+            label3 = new Label();
+            label4 = new Label();
             SuspendLayout();
             // 
             // A1
@@ -395,6 +399,7 @@
             // Next_Turn
             // 
             Next_Turn.BackColor = Color.FromArgb(238, 240, 229);
+            Next_Turn.Cursor = Cursors.Hand;
             Next_Turn.FlatAppearance.BorderColor = Color.Red;
             Next_Turn.FlatAppearance.BorderSize = 0;
             Next_Turn.FlatStyle = FlatStyle.Popup;
@@ -430,11 +435,59 @@
             label2.TabIndex = 24;
             label2.Text = "CO2 Show";
             // 
+            // firstPl_score
+            // 
+            firstPl_score.AutoSize = true;
+            firstPl_score.Font = new Font("Ponjoung Med", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            firstPl_score.ForeColor = Color.White;
+            firstPl_score.Location = new Point(188, 72);
+            firstPl_score.Name = "firstPl_score";
+            firstPl_score.Size = new Size(30, 31);
+            firstPl_score.TabIndex = 25;
+            firstPl_score.Text = "0";
+            // 
+            // secondPl_score
+            // 
+            secondPl_score.AutoSize = true;
+            secondPl_score.Font = new Font("Ponjoung Med", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            secondPl_score.ForeColor = Color.White;
+            secondPl_score.Location = new Point(1134, 72);
+            secondPl_score.Name = "secondPl_score";
+            secondPl_score.Size = new Size(30, 31);
+            secondPl_score.TabIndex = 26;
+            secondPl_score.Text = "0";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Ponjoung Med", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.ForeColor = Color.White;
+            label3.Location = new Point(12, 72);
+            label3.Name = "label3";
+            label3.Size = new Size(181, 31);
+            label3.TabIndex = 27;
+            label3.Text = "Player 1 Score:";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Ponjoung Med", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.ForeColor = Color.White;
+            label4.Location = new Point(953, 72);
+            label4.Name = "label4";
+            label4.Size = new Size(187, 31);
+            label4.TabIndex = 28;
+            label4.Text = "Player 2 Score:";
+            // 
             // Form1
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = Color.FromArgb(9, 38, 53);
             ClientSize = new Size(1229, 612);
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Controls.Add(secondPl_score);
+            Controls.Add(firstPl_score);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(Next_Turn);
@@ -460,6 +513,7 @@
             Controls.Add(A2);
             Controls.Add(A1);
             ForeColor = SystemColors.ActiveCaptionText;
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             Name = "Form1";
@@ -496,5 +550,9 @@
         private Button Next_Turn;
         private Label label1;
         private Label label2;
+        private Label firstPl_score;
+        private Label secondPl_score;
+        private Label label3;
+        private Label label4;
     }
 }

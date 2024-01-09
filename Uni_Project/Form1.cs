@@ -47,7 +47,7 @@ namespace Uni_Project
 
                 };
 
-
+                //I ndal krejt butonat e tjer kur klikohet nje buton(per arsye qe mos me mujt nje lojtar me i hap krejt butonat)
                 if (buttonText.ContainsKey(clickedButton))
                 {
                     foreach (var button in buttonText.Keys)
@@ -61,6 +61,7 @@ namespace Uni_Project
             }
         }
 
+        //Kjo eshte per me e ndrru tekstin e pergjigjjeve
         private void Answer_Click(object sender, EventArgs e)
         {
             Button clickedAnswer = sender as Button;
@@ -70,18 +71,57 @@ namespace Uni_Project
                 { B_Answer, "Answer2" },
                 { C_Answer, "Answer3" },
                 { D_Answer, "Answer4" },
-                {Final_Answer, "FinalAnswer" }
+                { Final_Answer, "FinalAnswer" }
             };
 
             if (buttonText.ContainsKey(clickedAnswer))
             {
                 clickedAnswer.Text = buttonText[clickedAnswer];
+                clickedAnswer.Enabled = false;
+
+                //I tregon programit pikt te cilat mund te fitohen nga nje pergjigje 100 =  me e pakta, 1000 = me e madhja
+                int points = (clickedAnswer == Final_Answer) ? 1000 : 100;
+
+                //Inicializimi i variablave qe i mbajne piket e lojtarve
+                int player1Score, player2Score;
+
+                if (!int.TryParse(firstPl_score.Text, out player1Score))
+                {
+                    player1Score = 0;
+                }
+
+                if (!int.TryParse(secondPl_score.Text, out player2Score))
+                {
+                    player2Score = 0;
+                }
+
+                //I bon update pikt sa her qe e gjen ni pergjigje te sakte
+                if (game.CurrentPlayerRole == "Player1")
+                {
+                    firstPl_score.Text = (player1Score + points).ToString();
+                }
+                else
+                {
+                    secondPl_score.Text = (player2Score + points).ToString();
+                }
+
+                //Kjo tregon se kush e ka fitu lojen
+                if (clickedAnswer == Final_Answer)
+                {
+                    if (player1Score > player2Score)
+                    {
+                        MessageBox.Show("Player 1 has won the Game!" + Environment.NewLine + "Don't give up! The game continues until you unveil all the answers.");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Player 2 has won the Game!" + Environment.NewLine + "Don't give up! The game continues until you unveil all the answers.");
+                    }
+                }
+
             }
-
-            clickedAnswer.Enabled = false;
-
         }
 
+        //Kjo i bon enable krejt butonat
         private void EnableAllButtons()
         {
             foreach (Control control in Controls)
@@ -208,6 +248,7 @@ namespace Uni_Project
         private void Final_Answer_Click(object sender, EventArgs e)
         {
             Answer_Click(sender, e);
+
         }
 
         //Butoni Next Turn qe me dal te lojtari tjeter
