@@ -3,8 +3,10 @@ using System.Windows.Forms;
 
 namespace Uni_Project
 {
+    //Perdorim i Iheritances Form1 trashegon prej klases Form
     public partial class Form1 : Form
     {
+
         private Game game;
 
         public Form1()
@@ -16,6 +18,7 @@ namespace Uni_Project
 
 
         //Metoda qe ju ndrron tekstin butonave
+        //Perdorimi i Polimorfizmit gjendet tek Button_Click dhe Answer_Click ku te dyjat e kan funksionin e njejt por perdoren ne butona krejt te ndryshem
         private void Button_Click(object sender, EventArgs e)
         {
             Button clickedButton = sender as Button;
@@ -25,25 +28,25 @@ namespace Uni_Project
                 //Ne rastin tone butoni eshte A1 edhe po i thojm qe ne butonin A1 me vendos teksin e dhene
                 Dictionary<Button, string> buttonText = new Dictionary<Button, string>
                 {
-                    { A1, "test1" },
-                    { A2, "test2" },
-                    { A3, "test3" },
-                    { A4, "test4" },
+                    { A1, "Detare" },
+                    { A2, "E Vazhduar" },
+                    { A3, "Ajrore" },
+                    { A4, "Alternative" },
 
-                    { B1, "B Text 1" },
-                    { B2, "B Text 2" },
-                    { B3, "B Text 3" },
-                    { B4, "B Text 4" },
+                    { B1, "Roja" },
+                    { B2, "Shtepiak" },
+                    { B3, "Amnistia" },
+                    { B4, "Denimi" },
 
-                    { C1, "C Text 1" },
-                    { C2, "C Text 2" },
-                    { C3, "C Text 3" },
-                    { C4, "C Text 4" },
+                    { C1, "Fizika" },
+                    { C2, "Gitara" },
+                    { C3, "Salla" },
+                    { C4, "Zeri" },
 
-                    { D1, "D Text 1" },
-                    { D2, "D Text 2" },
-                    { D3, "D Text 3" },
-                    { D4, "D Text 4" }
+                    { D1, "E embla..." },
+                    { D2, "Shkolla" },
+                    { D3, "Permisuese" },
+                    { D4, "Shendeti" }
 
                 };
 
@@ -67,11 +70,11 @@ namespace Uni_Project
             Button clickedAnswer = sender as Button;
             Dictionary<Button, string> buttonText = new Dictionary<Button, string>
             {
-                { A_Answer, "Answer1" },
-                { B_Answer, "Answer2" },
-                { C_Answer, "Answer3" },
-                { D_Answer, "Answer4" },
-                { Final_Answer, "FinalAnswer" }
+                { A_Answer, "Rryma" },
+                { B_Answer, "Burgu" },
+                { C_Answer, "Akustik" },
+                { D_Answer, "Shtepia" },
+                { Final_Answer, "Izolimi" }
             };
 
             if (buttonText.ContainsKey(clickedAnswer))
@@ -110,13 +113,15 @@ namespace Uni_Project
                 {
                     if (player1Score > player2Score)
                     {
-                        MessageBox.Show("Player 1 has won the Game!" + Environment.NewLine + "Don't give up! The game continues until you unveil all the answers.");
+                        MessageBox.Show("Player 2 has won the Game!" + Environment.NewLine + "Don't give up! The game continues until you unveil all the answers.");
                     }
                     else
                     {
-                        MessageBox.Show("Player 2 has won the Game!" + Environment.NewLine + "Don't give up! The game continues until you unveil all the answers.");
+                        MessageBox.Show("Player 1 has won the Game!" + Environment.NewLine + "Don't give up! The game continues until you unveil all the answers.");
                     }
                 }
+
+
 
             }
         }
@@ -259,8 +264,43 @@ namespace Uni_Project
             EnableAllButtons();
 
         }
+
+        public string player1ScoreFile = "C:\\Users\\Admin\\source\\repos\\Uni_Project\\Score1.txt";
+        public string player2ScoreFile = "C:\\Users\\Admin\\source\\repos\\Uni_Project\\Score2.txt";
+        private void SaveScoresToFile()
+        {
+
+            try
+            {
+                // Save Player 1's score to Score1.txt
+                File.WriteAllText(player1ScoreFile, firstPl_score.Text);
+
+                // Save Player 2's score to Score2.txt
+                File.WriteAllText(player2ScoreFile, secondPl_score.Text);
+
+                MessageBox.Show("Scores have been saved successfully!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error saving scores: {ex.Message}");
+            }
+        }
+
+
+        private void Exit_Button_Click(object sender, EventArgs e)
+        {
+
+            SaveScoresToFile();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            last_score.Text = File.ReadAllText(player1ScoreFile);
+            last_score2.Text = File.ReadAllText(player2ScoreFile);
+        }
     }
 
+    //Perdorimi i Enkapsulimit kjo klas përmbledh konceptin e lojes duke fshehur detajet e zbatimit dhe duke ekspozuar vetem vetite/metodat e nevojshme (CurrentPlayerRole dhe SwitchTurn())
     public class Game
     {
         public string CurrentPlayerRole { get; private set; }

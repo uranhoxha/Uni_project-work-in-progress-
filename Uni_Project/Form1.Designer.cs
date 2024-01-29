@@ -57,20 +57,25 @@
             secondPl_score = new Label();
             label3 = new Label();
             label4 = new Label();
+            Exit_Button = new Button();
+            last_score = new Label();
+            last_score2 = new Label();
+            label5 = new Label();
+            label6 = new Label();
             SuspendLayout();
             // 
             // A1
             // 
-            A1.BackColor = Color.FromArgb(92, 131, 116);
+            A1.BackColor = Color.FromArgb(230, 164, 180);
             A1.Cursor = Cursors.Hand;
             A1.FlatAppearance.BorderColor = Color.Red;
             A1.FlatAppearance.BorderSize = 10;
             A1.FlatStyle = FlatStyle.Popup;
-            A1.Font = new Font("Ponjoung Med", 17F, FontStyle.Regular, GraphicsUnit.Point);
-            A1.ForeColor = Color.FromArgb(238, 240, 229);
-            A1.Location = new Point(291, 156);
+            A1.Font = new Font("Ponjoung Med", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            A1.ForeColor = Color.FromArgb(71, 79, 122);
+            A1.Location = new Point(304, 285);
             A1.Name = "A1";
-            A1.Size = new Size(123, 48);
+            A1.Size = new Size(179, 48);
             A1.TabIndex = 0;
             A1.Text = "A1";
             A1.UseVisualStyleBackColor = false;
@@ -78,15 +83,15 @@
             // 
             // A2
             // 
-            A2.BackColor = Color.FromArgb(92, 131, 116);
+            A2.BackColor = Color.FromArgb(230, 164, 180);
             A2.Cursor = Cursors.Hand;
             A2.FlatAppearance.BorderColor = SystemColors.ActiveBorder;
             A2.FlatStyle = FlatStyle.Popup;
-            A2.Font = new Font("Ponjoung Med", 17F, FontStyle.Regular, GraphicsUnit.Point);
-            A2.ForeColor = Color.FromArgb(238, 240, 229);
-            A2.Location = new Point(291, 210);
+            A2.Font = new Font("Ponjoung Med", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            A2.ForeColor = Color.FromArgb(71, 79, 122);
+            A2.Location = new Point(304, 339);
             A2.Name = "A2";
-            A2.Size = new Size(123, 48);
+            A2.Size = new Size(179, 48);
             A2.TabIndex = 1;
             A2.Text = "A2";
             A2.UseVisualStyleBackColor = false;
@@ -94,15 +99,15 @@
             // 
             // A3
             // 
-            A3.BackColor = Color.FromArgb(92, 131, 116);
+            A3.BackColor = Color.FromArgb(230, 164, 180);
             A3.Cursor = Cursors.Hand;
             A3.FlatAppearance.BorderColor = SystemColors.ActiveBorder;
             A3.FlatStyle = FlatStyle.Popup;
-            A3.Font = new Font("Ponjoung Med", 17F, FontStyle.Regular, GraphicsUnit.Point);
-            A3.ForeColor = Color.FromArgb(238, 240, 229);
-            A3.Location = new Point(291, 264);
+            A3.Font = new Font("Ponjoung Med", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            A3.ForeColor = Color.FromArgb(71, 79, 122);
+            A3.Location = new Point(304, 393);
             A3.Name = "A3";
-            A3.Size = new Size(123, 48);
+            A3.Size = new Size(179, 48);
             A3.TabIndex = 2;
             A3.Text = "A3";
             A3.UseVisualStyleBackColor = false;
@@ -110,15 +115,15 @@
             // 
             // A4
             // 
-            A4.BackColor = Color.FromArgb(92, 131, 116);
+            A4.BackColor = Color.FromArgb(230, 164, 180);
             A4.Cursor = Cursors.Hand;
             A4.FlatAppearance.BorderColor = SystemColors.ActiveBorder;
             A4.FlatStyle = FlatStyle.Popup;
-            A4.Font = new Font("Ponjoung Med", 17F, FontStyle.Regular, GraphicsUnit.Point);
-            A4.ForeColor = Color.FromArgb(238, 240, 229);
-            A4.Location = new Point(291, 318);
+            A4.Font = new Font("Ponjoung Med", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            A4.ForeColor = Color.FromArgb(71, 79, 122);
+            A4.Location = new Point(304, 447);
             A4.Name = "A4";
-            A4.Size = new Size(123, 48);
+            A4.Size = new Size(179, 48);
             A4.TabIndex = 3;
             A4.Text = "A4";
             A4.UseVisualStyleBackColor = false;
@@ -126,15 +131,15 @@
             // 
             // A_Answer
             // 
-            A_Answer.BackColor = Color.FromArgb(92, 131, 116);
+            A_Answer.BackColor = Color.FromArgb(230, 164, 180);
             A_Answer.Cursor = Cursors.Hand;
             A_Answer.FlatAppearance.BorderColor = SystemColors.ActiveBorder;
             A_Answer.FlatStyle = FlatStyle.Popup;
-            A_Answer.Font = new Font("Ponjoung Med", 17F, FontStyle.Regular, GraphicsUnit.Point);
-            A_Answer.ForeColor = Color.FromArgb(238, 240, 229);
-            A_Answer.Location = new Point(291, 382);
+            A_Answer.Font = new Font("Ponjoung Med", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            A_Answer.ForeColor = Color.FromArgb(71, 79, 122);
+            A_Answer.Location = new Point(304, 511);
             A_Answer.Name = "A_Answer";
-            A_Answer.Size = new Size(123, 48);
+            A_Answer.Size = new Size(179, 48);
             A_Answer.TabIndex = 4;
             A_Answer.Text = "?";
             A_Answer.UseVisualStyleBackColor = false;
@@ -142,15 +147,15 @@
             // 
             // B_Answer
             // 
-            B_Answer.BackColor = Color.FromArgb(92, 131, 116);
+            B_Answer.BackColor = Color.FromArgb(230, 164, 180);
             B_Answer.Cursor = Cursors.Hand;
             B_Answer.FlatAppearance.BorderColor = SystemColors.ActiveBorder;
             B_Answer.FlatStyle = FlatStyle.Popup;
-            B_Answer.Font = new Font("Ponjoung Med", 17F, FontStyle.Regular, GraphicsUnit.Point);
-            B_Answer.ForeColor = Color.FromArgb(238, 240, 229);
-            B_Answer.Location = new Point(456, 382);
+            B_Answer.Font = new Font("Ponjoung Med", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            B_Answer.ForeColor = Color.FromArgb(71, 79, 122);
+            B_Answer.Location = new Point(504, 511);
             B_Answer.Name = "B_Answer";
-            B_Answer.Size = new Size(123, 48);
+            B_Answer.Size = new Size(179, 48);
             B_Answer.TabIndex = 9;
             B_Answer.Text = "?";
             B_Answer.UseVisualStyleBackColor = false;
@@ -158,15 +163,15 @@
             // 
             // B4
             // 
-            B4.BackColor = Color.FromArgb(92, 131, 116);
+            B4.BackColor = Color.FromArgb(230, 164, 180);
             B4.Cursor = Cursors.Hand;
             B4.FlatAppearance.BorderColor = SystemColors.ActiveBorder;
             B4.FlatStyle = FlatStyle.Popup;
-            B4.Font = new Font("Ponjoung Med", 17F, FontStyle.Regular, GraphicsUnit.Point);
-            B4.ForeColor = Color.FromArgb(238, 240, 229);
-            B4.Location = new Point(456, 318);
+            B4.Font = new Font("Ponjoung Med", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            B4.ForeColor = Color.FromArgb(71, 79, 122);
+            B4.Location = new Point(504, 447);
             B4.Name = "B4";
-            B4.Size = new Size(123, 48);
+            B4.Size = new Size(179, 48);
             B4.TabIndex = 8;
             B4.Text = "B4";
             B4.UseVisualStyleBackColor = false;
@@ -174,15 +179,15 @@
             // 
             // B3
             // 
-            B3.BackColor = Color.FromArgb(92, 131, 116);
+            B3.BackColor = Color.FromArgb(230, 164, 180);
             B3.Cursor = Cursors.Hand;
             B3.FlatAppearance.BorderColor = SystemColors.ActiveBorder;
             B3.FlatStyle = FlatStyle.Popup;
-            B3.Font = new Font("Ponjoung Med", 17F, FontStyle.Regular, GraphicsUnit.Point);
-            B3.ForeColor = Color.FromArgb(238, 240, 229);
-            B3.Location = new Point(456, 264);
+            B3.Font = new Font("Ponjoung Med", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            B3.ForeColor = Color.FromArgb(71, 79, 122);
+            B3.Location = new Point(504, 393);
             B3.Name = "B3";
-            B3.Size = new Size(123, 48);
+            B3.Size = new Size(179, 48);
             B3.TabIndex = 7;
             B3.Text = "B3";
             B3.UseVisualStyleBackColor = false;
@@ -190,15 +195,15 @@
             // 
             // B2
             // 
-            B2.BackColor = Color.FromArgb(92, 131, 116);
+            B2.BackColor = Color.FromArgb(230, 164, 180);
             B2.Cursor = Cursors.Hand;
             B2.FlatAppearance.BorderColor = SystemColors.ActiveBorder;
             B2.FlatStyle = FlatStyle.Popup;
-            B2.Font = new Font("Ponjoung Med", 17F, FontStyle.Regular, GraphicsUnit.Point);
-            B2.ForeColor = Color.FromArgb(238, 240, 229);
-            B2.Location = new Point(456, 210);
+            B2.Font = new Font("Ponjoung Med", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            B2.ForeColor = Color.FromArgb(71, 79, 122);
+            B2.Location = new Point(504, 339);
             B2.Name = "B2";
-            B2.Size = new Size(123, 48);
+            B2.Size = new Size(179, 48);
             B2.TabIndex = 6;
             B2.Text = "B2";
             B2.UseVisualStyleBackColor = false;
@@ -206,15 +211,15 @@
             // 
             // B1
             // 
-            B1.BackColor = Color.FromArgb(92, 131, 116);
+            B1.BackColor = Color.FromArgb(230, 164, 180);
             B1.Cursor = Cursors.Hand;
             B1.FlatAppearance.BorderColor = SystemColors.ActiveBorder;
             B1.FlatStyle = FlatStyle.Popup;
-            B1.Font = new Font("Ponjoung Med", 17F, FontStyle.Regular, GraphicsUnit.Point);
-            B1.ForeColor = Color.FromArgb(238, 240, 229);
-            B1.Location = new Point(456, 156);
+            B1.Font = new Font("Ponjoung Med", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            B1.ForeColor = Color.FromArgb(71, 79, 122);
+            B1.Location = new Point(504, 285);
             B1.Name = "B1";
-            B1.Size = new Size(123, 48);
+            B1.Size = new Size(179, 48);
             B1.TabIndex = 5;
             B1.Text = "B1";
             B1.UseVisualStyleBackColor = false;
@@ -222,15 +227,15 @@
             // 
             // C1
             // 
-            C1.BackColor = Color.FromArgb(92, 131, 116);
+            C1.BackColor = Color.FromArgb(230, 164, 180);
             C1.Cursor = Cursors.Hand;
             C1.FlatAppearance.BorderColor = SystemColors.ActiveBorder;
             C1.FlatStyle = FlatStyle.Popup;
-            C1.Font = new Font("Ponjoung Med", 17F, FontStyle.Regular, GraphicsUnit.Point);
-            C1.ForeColor = Color.FromArgb(238, 240, 229);
-            C1.Location = new Point(621, 156);
+            C1.Font = new Font("Ponjoung Med", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            C1.ForeColor = Color.FromArgb(71, 79, 122);
+            C1.Location = new Point(705, 285);
             C1.Name = "C1";
-            C1.Size = new Size(123, 48);
+            C1.Size = new Size(179, 48);
             C1.TabIndex = 10;
             C1.Text = "C1";
             C1.UseVisualStyleBackColor = false;
@@ -238,15 +243,15 @@
             // 
             // C2
             // 
-            C2.BackColor = Color.FromArgb(92, 131, 116);
+            C2.BackColor = Color.FromArgb(230, 164, 180);
             C2.Cursor = Cursors.Hand;
             C2.FlatAppearance.BorderColor = SystemColors.ActiveBorder;
             C2.FlatStyle = FlatStyle.Popup;
-            C2.Font = new Font("Ponjoung Med", 17F, FontStyle.Regular, GraphicsUnit.Point);
-            C2.ForeColor = Color.FromArgb(238, 240, 229);
-            C2.Location = new Point(621, 210);
+            C2.Font = new Font("Ponjoung Med", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            C2.ForeColor = Color.FromArgb(71, 79, 122);
+            C2.Location = new Point(705, 339);
             C2.Name = "C2";
-            C2.Size = new Size(123, 48);
+            C2.Size = new Size(179, 48);
             C2.TabIndex = 11;
             C2.Text = "C2";
             C2.UseVisualStyleBackColor = false;
@@ -254,15 +259,15 @@
             // 
             // C3
             // 
-            C3.BackColor = Color.FromArgb(92, 131, 116);
+            C3.BackColor = Color.FromArgb(230, 164, 180);
             C3.Cursor = Cursors.Hand;
             C3.FlatAppearance.BorderColor = SystemColors.ActiveBorder;
             C3.FlatStyle = FlatStyle.Popup;
-            C3.Font = new Font("Ponjoung Med", 17F, FontStyle.Regular, GraphicsUnit.Point);
-            C3.ForeColor = Color.FromArgb(238, 240, 229);
-            C3.Location = new Point(621, 264);
+            C3.Font = new Font("Ponjoung Med", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            C3.ForeColor = Color.FromArgb(71, 79, 122);
+            C3.Location = new Point(705, 393);
             C3.Name = "C3";
-            C3.Size = new Size(123, 48);
+            C3.Size = new Size(179, 48);
             C3.TabIndex = 12;
             C3.Text = "C3";
             C3.UseVisualStyleBackColor = false;
@@ -270,15 +275,15 @@
             // 
             // C4
             // 
-            C4.BackColor = Color.FromArgb(92, 131, 116);
+            C4.BackColor = Color.FromArgb(230, 164, 180);
             C4.Cursor = Cursors.Hand;
             C4.FlatAppearance.BorderColor = SystemColors.ActiveBorder;
             C4.FlatStyle = FlatStyle.Popup;
-            C4.Font = new Font("Ponjoung Med", 17F, FontStyle.Regular, GraphicsUnit.Point);
-            C4.ForeColor = Color.FromArgb(238, 240, 229);
-            C4.Location = new Point(621, 318);
+            C4.Font = new Font("Ponjoung Med", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            C4.ForeColor = Color.FromArgb(71, 79, 122);
+            C4.Location = new Point(705, 447);
             C4.Name = "C4";
-            C4.Size = new Size(123, 48);
+            C4.Size = new Size(179, 48);
             C4.TabIndex = 13;
             C4.Text = "C4";
             C4.UseVisualStyleBackColor = false;
@@ -286,15 +291,15 @@
             // 
             // C_Answer
             // 
-            C_Answer.BackColor = Color.FromArgb(92, 131, 116);
+            C_Answer.BackColor = Color.FromArgb(230, 164, 180);
             C_Answer.Cursor = Cursors.Hand;
             C_Answer.FlatAppearance.BorderColor = SystemColors.ActiveBorder;
             C_Answer.FlatStyle = FlatStyle.Popup;
-            C_Answer.Font = new Font("Ponjoung Med", 17F, FontStyle.Regular, GraphicsUnit.Point);
-            C_Answer.ForeColor = Color.FromArgb(238, 240, 229);
-            C_Answer.Location = new Point(621, 382);
+            C_Answer.Font = new Font("Ponjoung Med", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            C_Answer.ForeColor = Color.FromArgb(71, 79, 122);
+            C_Answer.Location = new Point(705, 511);
             C_Answer.Name = "C_Answer";
-            C_Answer.Size = new Size(123, 48);
+            C_Answer.Size = new Size(179, 48);
             C_Answer.TabIndex = 14;
             C_Answer.Text = "?";
             C_Answer.UseVisualStyleBackColor = false;
@@ -302,15 +307,15 @@
             // 
             // D_Answer
             // 
-            D_Answer.BackColor = Color.FromArgb(92, 131, 116);
+            D_Answer.BackColor = Color.FromArgb(230, 164, 180);
             D_Answer.Cursor = Cursors.Hand;
             D_Answer.FlatAppearance.BorderColor = SystemColors.ActiveBorder;
             D_Answer.FlatStyle = FlatStyle.Popup;
-            D_Answer.Font = new Font("Ponjoung Med", 17F, FontStyle.Regular, GraphicsUnit.Point);
-            D_Answer.ForeColor = Color.FromArgb(238, 240, 229);
-            D_Answer.Location = new Point(787, 382);
+            D_Answer.Font = new Font("Ponjoung Med", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            D_Answer.ForeColor = Color.FromArgb(71, 79, 122);
+            D_Answer.Location = new Point(906, 511);
             D_Answer.Name = "D_Answer";
-            D_Answer.Size = new Size(123, 48);
+            D_Answer.Size = new Size(179, 48);
             D_Answer.TabIndex = 19;
             D_Answer.Text = "?";
             D_Answer.UseVisualStyleBackColor = false;
@@ -318,15 +323,15 @@
             // 
             // D4
             // 
-            D4.BackColor = Color.FromArgb(92, 131, 116);
+            D4.BackColor = Color.FromArgb(230, 164, 180);
             D4.Cursor = Cursors.Hand;
             D4.FlatAppearance.BorderColor = SystemColors.ActiveBorder;
             D4.FlatStyle = FlatStyle.Popup;
-            D4.Font = new Font("Ponjoung Med", 17F, FontStyle.Regular, GraphicsUnit.Point);
-            D4.ForeColor = Color.FromArgb(238, 240, 229);
-            D4.Location = new Point(787, 318);
+            D4.Font = new Font("Ponjoung Med", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            D4.ForeColor = Color.FromArgb(71, 79, 122);
+            D4.Location = new Point(906, 447);
             D4.Name = "D4";
-            D4.Size = new Size(123, 48);
+            D4.Size = new Size(179, 48);
             D4.TabIndex = 18;
             D4.Text = "D4";
             D4.UseVisualStyleBackColor = false;
@@ -334,15 +339,15 @@
             // 
             // D3
             // 
-            D3.BackColor = Color.FromArgb(92, 131, 116);
+            D3.BackColor = Color.FromArgb(230, 164, 180);
             D3.Cursor = Cursors.Hand;
             D3.FlatAppearance.BorderColor = SystemColors.ActiveBorder;
             D3.FlatStyle = FlatStyle.Popup;
-            D3.Font = new Font("Ponjoung Med", 17F, FontStyle.Regular, GraphicsUnit.Point);
-            D3.ForeColor = Color.FromArgb(238, 240, 229);
-            D3.Location = new Point(787, 264);
+            D3.Font = new Font("Ponjoung Med", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            D3.ForeColor = Color.FromArgb(71, 79, 122);
+            D3.Location = new Point(906, 393);
             D3.Name = "D3";
-            D3.Size = new Size(123, 48);
+            D3.Size = new Size(179, 48);
             D3.TabIndex = 17;
             D3.Text = "D3";
             D3.UseVisualStyleBackColor = false;
@@ -350,15 +355,15 @@
             // 
             // D2
             // 
-            D2.BackColor = Color.FromArgb(92, 131, 116);
+            D2.BackColor = Color.FromArgb(230, 164, 180);
             D2.Cursor = Cursors.Hand;
             D2.FlatAppearance.BorderColor = SystemColors.ActiveBorder;
             D2.FlatStyle = FlatStyle.Popup;
-            D2.Font = new Font("Ponjoung Med", 17F, FontStyle.Regular, GraphicsUnit.Point);
-            D2.ForeColor = Color.FromArgb(238, 240, 229);
-            D2.Location = new Point(787, 210);
+            D2.Font = new Font("Ponjoung Med", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            D2.ForeColor = Color.FromArgb(71, 79, 122);
+            D2.Location = new Point(906, 339);
             D2.Name = "D2";
-            D2.Size = new Size(123, 48);
+            D2.Size = new Size(179, 48);
             D2.TabIndex = 16;
             D2.Text = "D2";
             D2.UseVisualStyleBackColor = false;
@@ -366,15 +371,15 @@
             // 
             // D1
             // 
-            D1.BackColor = Color.FromArgb(92, 131, 116);
+            D1.BackColor = Color.FromArgb(230, 164, 180);
             D1.Cursor = Cursors.Hand;
             D1.FlatAppearance.BorderColor = SystemColors.ActiveBorder;
             D1.FlatStyle = FlatStyle.Popup;
-            D1.Font = new Font("Ponjoung Med", 17F, FontStyle.Regular, GraphicsUnit.Point);
-            D1.ForeColor = Color.FromArgb(238, 240, 229);
-            D1.Location = new Point(787, 156);
+            D1.Font = new Font("Ponjoung Med", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            D1.ForeColor = Color.FromArgb(71, 79, 122);
+            D1.Location = new Point(906, 285);
             D1.Name = "D1";
-            D1.Size = new Size(123, 48);
+            D1.Size = new Size(179, 48);
             D1.TabIndex = 15;
             D1.Text = "D1";
             D1.UseVisualStyleBackColor = false;
@@ -382,15 +387,15 @@
             // 
             // Final_Answer
             // 
-            Final_Answer.BackColor = Color.FromArgb(92, 131, 116);
+            Final_Answer.BackColor = Color.FromArgb(230, 164, 180);
             Final_Answer.Cursor = Cursors.Hand;
             Final_Answer.FlatAppearance.BorderColor = SystemColors.ActiveBorder;
             Final_Answer.FlatStyle = FlatStyle.Popup;
-            Final_Answer.Font = new Font("Ponjoung Med", 17F, FontStyle.Regular, GraphicsUnit.Point);
-            Final_Answer.ForeColor = Color.FromArgb(238, 240, 229);
-            Final_Answer.Location = new Point(291, 463);
+            Final_Answer.Font = new Font("Ponjoung Med", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            Final_Answer.ForeColor = Color.FromArgb(71, 79, 122);
+            Final_Answer.Location = new Point(367, 583);
             Final_Answer.Name = "Final_Answer";
-            Final_Answer.Size = new Size(619, 48);
+            Final_Answer.Size = new Size(661, 48);
             Final_Answer.TabIndex = 20;
             Final_Answer.Text = "?";
             Final_Answer.UseVisualStyleBackColor = false;
@@ -398,16 +403,16 @@
             // 
             // Next_Turn
             // 
-            Next_Turn.BackColor = Color.FromArgb(238, 240, 229);
+            Next_Turn.BackColor = Color.FromArgb(241, 212, 229);
             Next_Turn.Cursor = Cursors.Hand;
             Next_Turn.FlatAppearance.BorderColor = Color.Red;
             Next_Turn.FlatAppearance.BorderSize = 0;
             Next_Turn.FlatStyle = FlatStyle.Popup;
             Next_Turn.Font = new Font("Ponjoung Med", 15.7499981F, FontStyle.Bold, GraphicsUnit.Point);
-            Next_Turn.ForeColor = Color.FromArgb(92, 131, 116);
-            Next_Turn.Location = new Point(994, 262);
+            Next_Turn.ForeColor = Color.FromArgb(31, 37, 68);
+            Next_Turn.Location = new Point(1136, 286);
             Next_Turn.Name = "Next_Turn";
-            Next_Turn.Size = new Size(124, 50);
+            Next_Turn.Size = new Size(181, 50);
             Next_Turn.TabIndex = 22;
             Next_Turn.Text = "Next turn";
             Next_Turn.UseVisualStyleBackColor = false;
@@ -417,19 +422,20 @@
             // 
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Ponjoung Med", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.ForeColor = Color.FromArgb(158, 200, 185);
-            label1.Location = new Point(569, 122);
+            label1.Font = new Font("Ponjoung Med", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = Color.FromArgb(252, 233, 241);
+            label1.Location = new Point(659, 188);
             label1.Name = "label1";
-            label1.Size = new Size(0, 21);
+            label1.Size = new Size(66, 31);
             label1.TabIndex = 23;
+            label1.Text = "Test";
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Ponjoung Med", 47.9999924F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.ForeColor = Color.FromArgb(158, 200, 185);
-            label2.Location = new Point(426, 20);
+            label2.ForeColor = Color.FromArgb(255, 208, 236);
+            label2.Location = new Point(529, 52);
             label2.Name = "label2";
             label2.Size = new Size(364, 83);
             label2.TabIndex = 24;
@@ -439,8 +445,8 @@
             // 
             firstPl_score.AutoSize = true;
             firstPl_score.Font = new Font("Ponjoung Med", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            firstPl_score.ForeColor = Color.White;
-            firstPl_score.Location = new Point(188, 72);
+            firstPl_score.ForeColor = Color.FromArgb(252, 233, 241);
+            firstPl_score.Location = new Point(256, 191);
             firstPl_score.Name = "firstPl_score";
             firstPl_score.Size = new Size(30, 31);
             firstPl_score.TabIndex = 25;
@@ -450,8 +456,8 @@
             // 
             secondPl_score.AutoSize = true;
             secondPl_score.Font = new Font("Ponjoung Med", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            secondPl_score.ForeColor = Color.White;
-            secondPl_score.Location = new Point(1134, 72);
+            secondPl_score.ForeColor = Color.FromArgb(252, 233, 241);
+            secondPl_score.Location = new Point(1287, 188);
             secondPl_score.Name = "secondPl_score";
             secondPl_score.Size = new Size(30, 31);
             secondPl_score.TabIndex = 26;
@@ -461,8 +467,8 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Ponjoung Med", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.ForeColor = Color.White;
-            label3.Location = new Point(12, 72);
+            label3.ForeColor = Color.FromArgb(252, 233, 241);
+            label3.Location = new Point(29, 191);
             label3.Name = "label3";
             label3.Size = new Size(181, 31);
             label3.TabIndex = 27;
@@ -472,18 +478,81 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Ponjoung Med", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.ForeColor = Color.White;
-            label4.Location = new Point(953, 72);
+            label4.ForeColor = Color.FromArgb(252, 233, 241);
+            label4.Location = new Point(1052, 188);
             label4.Name = "label4";
             label4.Size = new Size(187, 31);
             label4.TabIndex = 28;
             label4.Text = "Player 2 Score:";
             // 
+            // Exit_Button
+            // 
+            Exit_Button.BackColor = Color.FromArgb(31, 37, 68);
+            Exit_Button.FlatStyle = FlatStyle.Popup;
+            Exit_Button.Font = new Font("Ponjoung Med", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            Exit_Button.ForeColor = Color.FromArgb(241, 212, 229);
+            Exit_Button.Location = new Point(1136, 358);
+            Exit_Button.Name = "Exit_Button";
+            Exit_Button.Size = new Size(181, 50);
+            Exit_Button.TabIndex = 29;
+            Exit_Button.Text = "Save Scores";
+            Exit_Button.UseVisualStyleBackColor = false;
+            Exit_Button.Click += Exit_Button_Click;
+            // 
+            // last_score
+            // 
+            last_score.AutoSize = true;
+            last_score.Font = new Font("Ponjoung Med", 13F, FontStyle.Bold, GraphicsUnit.Point);
+            last_score.ForeColor = Color.FromArgb(252, 233, 241);
+            last_score.Location = new Point(256, 240);
+            last_score.Name = "last_score";
+            last_score.Size = new Size(52, 23);
+            last_score.TabIndex = 30;
+            last_score.Text = "1500";
+            // 
+            // last_score2
+            // 
+            last_score2.AutoSize = true;
+            last_score2.Font = new Font("Ponjoung Med", 13F, FontStyle.Bold, GraphicsUnit.Point);
+            last_score2.ForeColor = Color.FromArgb(252, 233, 241);
+            last_score2.Location = new Point(1286, 240);
+            last_score2.Name = "last_score2";
+            last_score2.Size = new Size(52, 23);
+            last_score2.TabIndex = 31;
+            last_score2.Text = "1500";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Ponjoung Med", 13F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.ForeColor = Color.FromArgb(252, 233, 241);
+            label5.Location = new Point(32, 240);
+            label5.Name = "label5";
+            label5.Size = new Size(187, 23);
+            label5.TabIndex = 32;
+            label5.Text = "Last Player 1 Score:";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Ponjoung Med", 13F, FontStyle.Bold, GraphicsUnit.Point);
+            label6.ForeColor = Color.FromArgb(252, 233, 241);
+            label6.Location = new Point(1054, 240);
+            label6.Name = "label6";
+            label6.Size = new Size(192, 23);
+            label6.TabIndex = 33;
+            label6.Text = "Last Player 2 Score:";
+            // 
             // Form1
             // 
             AutoScaleMode = AutoScaleMode.None;
-            BackColor = Color.FromArgb(9, 38, 53);
-            ClientSize = new Size(1229, 612);
+            BackColor = Color.FromArgb(71, 79, 122);
+            ClientSize = new Size(1434, 741);
+            Controls.Add(label6);
+            Controls.Add(label5);
+            Controls.Add(last_score2);
+            Controls.Add(last_score);
+            Controls.Add(Exit_Button);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(secondPl_score);
@@ -520,6 +589,7 @@
             ShowIcon = false;
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Game Show";
+            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -554,5 +624,10 @@
         private Label secondPl_score;
         private Label label3;
         private Label label4;
+        private Button Exit_Button;
+        private Label last_score;
+        private Label last_score2;
+        private Label label5;
+        private Label label6;
     }
 }
