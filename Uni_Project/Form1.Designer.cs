@@ -62,6 +62,7 @@
             last_score2 = new Label();
             label5 = new Label();
             label6 = new Label();
+            label7 = new Label();
             SuspendLayout();
             // 
             // A1
@@ -543,11 +544,23 @@
             label6.TabIndex = 33;
             label6.Text = "Last Player 2 Score:";
             // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label7.ForeColor = Color.FromArgb(252, 233, 241);
+            label7.Location = new Point(12, 716);
+            label7.Name = "label7";
+            label7.Size = new Size(392, 16);
+            label7.TabIndex = 34;
+            label7.Text = "This project is done by: Uran Hoxha, Alba Gashi and Agnesa Sejdiu";
+            // 
             // Form1
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = Color.FromArgb(71, 79, 122);
             ClientSize = new Size(1434, 741);
+            Controls.Add(label7);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(last_score2);
@@ -629,5 +642,6 @@
         private Label last_score2;
         private Label label5;
         private Label label6;
+        private Label label7;
     }
 }
